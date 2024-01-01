@@ -27,7 +27,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script{
-                        docker.withRegistry('https://025414111246.dkr.ecr.ap-south-1.amazonaws.com/jenkins-test', 'AKIAQL2WMSAHD6D64VIE (aws access with jenkins)') {
+                        docker.withRegistry('https://025414111246.dkr.ecr.ap-south-1.amazonaws.com/', 'ecr:ap-south-1:jenkins-test') {
                     app.push("${env.BUILD_NUMBER}")
                     app.push("latest")
                     }
