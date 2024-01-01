@@ -7,13 +7,12 @@ Jenkins with AWS ECR pipeline
 3. sudo usermod -a -G docker ec2-user
 4. id ec2-user
 5. newgrp docker
-7. sudo systemctl enable docker.service
-8. sudo systemctl start docker.service
-9. sudo systemctl status docker.service
-10. sudo yum install git
-11. which git ---> set git path in Jenkins
-12. chmod 777 /var/run/docker.sock
-
+6. sudo systemctl enable docker.service
+7. sudo systemctl start docker.service
+8. sudo systemctl status docker.service
+9. sudo yum install git
+10. which git ---> set git path in Jenkins
+11. chmod 777 /var/run/docker.sock
 
 ## Install Jenkins
 
@@ -31,17 +30,16 @@ https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/
 8. Docker plugin
 9. Docker workflow
 
-
 GitHub Integration Plugin
 Version0.5.0
 GitHub Integration Plugin for Jenkins
-
 
 GitHub plugin
 Version1.37.0
 This plugin integrates GitHub to Jenkins.
 Report an issue with this plugin
 
-
 Pipeline: GitHub
 Version2.8-138.d766e30bb08b
+
+come changes
